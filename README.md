@@ -29,3 +29,11 @@
             - `app/models/idea.rb`, `db/migrate`, `app/views`
         * `idea` -> `app/controllers/ideas_controller.rb`, `app/views/ideas`
             - `idea` model = one `idea`, controller -> many `idea`s
+3. design
+    - `app/views/layouts/application.html.erb`: skeleton for individual pages
+        * all the `idea` pages use this (list, show, edit)
+        * can be used for application-wide navigation, footer
+    - `app/assets/stylesheets/application.css`: application-wide stylesheet
+    - HTML: structure, CSS: style/layout; CSS can [restyle page completely][zengarden]
+
+[zengarden]: http://www.csszengarden.com/
