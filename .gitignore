@@ -17,3 +17,6 @@
 
 # Ignore bundled dependencies
 /vendor/bundle
+
+# Ignore uploaded images
+/public/uploads
