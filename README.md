@@ -44,6 +44,10 @@
     - `mount_uploader :picture, PictureUploader`: sets up the `picture`
         field of `idea` to use the `PictureUploader`
     - `<%= f.file_field :picture %>`: uses a file uploader for the picture
+5. finetune the routes
+    - `config/routes.rb`: maps URLs to controllers, options for routes
+        (http methods, parameters)
+    - view routes with `rake routes`
 
 ## Notes
 
