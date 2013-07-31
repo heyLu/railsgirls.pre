@@ -22,3 +22,10 @@
     - `rails server`: runs the application (see it at <http://localhost:3000>)
         * for now it only shows that rails works
         * later on will serve your application
+2. create idea scaffold
+    - `rails generate scaffold idea name:string description:text picture:string`
+        * this generates the scaffolding for a model named `idea` with a
+            `name`, description` and a `picture`
+            - `app/models/idea.rb`, `db/migrate`, `app/views`
+        * `idea` -> `app/controllers/ideas_controller.rb`, `app/views/ideas`
+            - `idea` model = one `idea`, controller -> many `idea`s
