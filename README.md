@@ -19,3 +19,6 @@
             - `config/application.rb`: application config
         * `test`: also exactly what you think
         * `public`: some templates (error pages, favicon, robots.txt)
+    - `rails server`: runs the application (see it at <http://localhost:3000>)
+        * for now it only shows that rails works
+        * later on will serve your application
