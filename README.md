@@ -45,4 +45,9 @@
         field of `idea` to use the `PictureUploader`
     - `<%= f.file_field :picture %>`: uses a file uploader for the picture
 
+## Notes
+
+* which level of detail? (would like to give opportunity to learn more,
+    go further etc)
+
 [zengarden]: http://www.csszengarden.com/
