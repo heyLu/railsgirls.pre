@@ -35,5 +35,14 @@
         * can be used for application-wide navigation, footer
     - `app/assets/stylesheets/application.css`: application-wide stylesheet
     - HTML: structure, CSS: style/layout; CSS can [restyle page completely][zengarden]
+4. adding picture uploads
+    - `gem 'carrierwave'`: library that handles image uploads
+        * `bundle` reads the `Gemfile` and fetches dependencies
+    - `rails generate uploader Picture`: generates code for uploading
+        images (from the `carrierwave` dependency)
+    - need to restart `rails server` now
+    - `mount_uploader :picture, PictureUploader`: sets up the `picture`
+        field of `idea` to use the `PictureUploader`
+    - `<%= f.file_field :picture %>`: uses a file uploader for the picture
 
 [zengarden]: http://www.csszengarden.com/
