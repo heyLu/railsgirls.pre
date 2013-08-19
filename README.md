@@ -53,5 +53,8 @@
 
 * which level of detail? (would like to give opportunity to learn more,
     go further etc)
+* css basics/learning (alistapart, selfhtml)
+* basic interactivity
+* guide first steps, make the next ones possible
 
 [zengarden]: http://www.csszengarden.com/
