@@ -13,5 +13,30 @@
  */
 body { padding-top: 100px }
 footer { margin-top: 100px }
-table, td, th { vertical-align: middle !important; border: none !important; }
-th { border-bottom: 1px solid #ddd !important }
+
+#ideas {
+	list-style-type: none;
+}
+
+.idea {
+  position: relative;
+  float: left;
+
+  margin: 10px;
+}
+
+.idea .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: black;
+  visibility: hidden;
+}
+
+.idea:hover .detail { visibility: visible }
+.idea:hover img { opacity: 0.3 }
+
+#actions {
+  clear: left;
+}

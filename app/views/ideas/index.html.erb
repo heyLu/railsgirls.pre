@@ -1,31 +1,19 @@
-<h1>Listing ideas</h1>
+<h1>Awesome ideas</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<ul id="ideas">
+<% @ideas.each do |idea| %>
+  <a href="<%= url_for idea %>">
+    <li class="idea">
+      <%= image_tag(idea.picture_url, :width => 300, :height => 300) if idea.picture.present? %>
+      <div class="detail">
+        <h3><%= idea.name %></h3>
+        <span><%= idea.description %></span>
+      </div>
+    </li>
+  </a>
+<% end %>
+</ul>
 
-  <tbody>
-    <% @ideas.each do |idea| %>
-      <tr>
-        <td><%= idea.name %></td>
-        <td><%= idea.description %></td>
-        <td><%= image_tag(idea.picture_url, :width => 100) if idea.picture.present? %></td>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Idea', new_idea_path %>
+<div id="actions">
+  <%= link_to 'New Idea', new_idea_path %>
+</div>
