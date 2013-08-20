@@ -1,11 +1,11 @@
 <h1>Awesome ideas</h1>
 
-<ul id="ideas">
+<ul id="ideas" class="row">
 <% @ideas.each do |idea| %>
   <a href="<%= url_for idea %>">
-    <li class="idea">
+    <li class="idea col-md-4 col-sm-6">
       <%= image_tag(idea.picture_url, :width => 300, :height => 300) if idea.picture.present? %>
-      <div class="detail">
+      <div class="container detail">
         <h3><%= idea.name %></h3>
         <span><%= idea.description %></span>
       </div>
