@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-body { padding-top: 100px }
+body { padding-top: 50px }
 footer { margin-top: 100px }
 
 #ideas {
