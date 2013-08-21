@@ -8,6 +8,7 @@
       <div class="container detail">
         <h3><%= idea.name %></h3>
         <span><%= idea.description %></span>
+        <%= link_to "Delete", idea, remote: true, method: :delete %>
       </div>
     </li>
   </a>
